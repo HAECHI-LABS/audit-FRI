@@ -4,7 +4,7 @@ pragma solidity 0.8.0;
 
 abstract contract ERC20 {
 
-    uint256 private _totalSupply;
+    uint256 internal _totalSupply;
     mapping(address => uint256) internal _balances;
     mapping(address => mapping(address => uint256)) internal _allowances;
 
